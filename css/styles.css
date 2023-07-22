@@ -542,8 +542,10 @@ img {
 /* basis */
 .team-box {
   display: flex;
-  padding-left: 82px;
-  padding-right: 82px;
+  /* padding-left: 82px;
+  padding-right: 82px; */
+  margin-left: auto;
+  margin-right: auto;
 }
 @media only screen and (max-width: 767px) {
   .team-box {
