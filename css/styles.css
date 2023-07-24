@@ -58,6 +58,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .header-box {
@@ -231,11 +232,16 @@ img {
   padding: 188px 0;
   margin: 0 auto;
   max-width: 1440px;
-  background-image: linear-gradient(var(--grey), var(--grey)), url(../images/people-office.jpg);
+  background-image: linear-gradient(var(--grey), var(--grey)), url(../images/people-office@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--grey), var(--grey)), url(../images/people-office@2x.jpg);
+  }
 }
 
 /* basis */
